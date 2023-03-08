@@ -1,0 +1,315 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+}
+body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main_page{
+    width: 100vw;
+    height: 100vh;
+}
+.show-logo{
+    display: flex;
+    justify-content: center;
+    height: 45vh;
+    padding:30px 0;
+    background-image: url(./images/bg-header-desktop.png);
+}
+.show-logo img{
+    height: 20vh;
+    margin-top: 20vh;
+}
+.main-info-box{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.heading{
+    font-weight: 600;
+    font-size: 30px;
+}
+.info{
+    font-size: 18px;
+    width: 40%;
+    text-align: center;
+}
+.btn-box{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding:15px 20px ;
+    width: 100%;
+}
+.btn{
+    padding: 12px 35px;
+    border-radius: 22px;
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ios{
+    background-color: hsl(171, 66%, 44%);
+}
+.mac{
+    background-color: hsl(233, 100%, 69%);
+}
+
+/* Track section */
+.keep-track{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.info-container{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.head2{
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+.track-container{
+    width: 100%;
+    display: flex;
+}
+.track-section{
+    width: 50%;
+    height:80vh;
+}
+.track-img-container img{
+    position: relative;
+    left: -40px;
+}
+.track-info-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    padding-left: 60px;
+}
+.head3{
+    font-weight: 600;
+    font-size: 20px;
+}
+.message-info{
+    width: 50%;
+}
+.accessClip{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.accessInfo{
+    margin-top: 10px;
+}
+.img-part{
+    margin-top: 50px;
+}
+.modify-info{
+    margin: 20px 0;
+    color:hsl(201, 11%, 66%);
+    font-size: 12px;
+}
+.supercharge{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.services-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 70px;
+}
+.services{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    padding: 15px;
+}
+.service-info{
+    color: hsl(201, 11%, 66%);
+    font-size: 15px;
+    width: 80%;
+}
+.service-header{
+    font-weight: 600;
+}
+.logos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 14px;
+    width: 100%;
+    margin-bottom: 150px;
+}
+.clipboard-repeat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.clip2{
+    text-align: center;
+    margin-top: 20px;
+    width: 37%;
+}
+.attribution {
+     font-size: 11px; text-align: center;
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+@media(max-width:850px){
+    .main_page{
+        width: 100%;
+    }
+    .show-logo img{
+        margin-top: 5vh;
+    }
+    .info{
+        font-size: 18px;
+        width: 80%;
+        text-align: center;
+    }
+    .track-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .track-section{
+        width: 100%;
+        height:auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .track-img-container img{
+        left: 0px;
+    }
+    .track-info-container{
+        flex-direction: row;
+        margin-top: 60px;
+        gap: 15px;
+    }
+    .accessClip{
+        margin-top: 30px;
+    }
+    .message{
+        width: 30%;
+        height: 22vh;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px;
+    }
+    .message-info{
+        width: 100%;
+    }
+    .img-part{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-part img{
+        width: 90%;
+    }
+    .logos{
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+}
+@media(max-width:500px){
+    .heading{
+        width: 90%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .track-img-container{
+        width: 100%;
+    }
+    .track-img-container img{
+        width: 90%;
+    }
+    .track-info-container{
+        flex-direction: column;
+        width: 100%;
+        margin:  20px auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    .accessClip{
+        margin-top: 30px;
+    }
+    .track-section{
+        width: 100%;
+        height: auto;
+    }
+    .message{
+        width: 100%;
+        margin-right: 50px;
+    }
+    .services-container{
+        flex-wrap: wrap;
+    }
+    .services{
+        width: 100%;
+    }
+    .logos img{
+        width: 50%;
+    }
+    .compang-logo{
+        width: 100%;
+    }
+    .clip2{
+        width: 100%;
+        padding: 10px;
+    }
+    .btn-box{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn{
+        width: 100%;
+    }
+    
+}
+@media(max-width:340px){
+    .heading{
+        margin-top: 30px;
+    }
+    
+}
+@media(max-width:100px){
+    .keep-track{
+        height:300vh;
+    }
+}
